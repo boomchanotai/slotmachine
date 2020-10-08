@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+.SlotMachine{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-image: url(./image/background_color.jpg);
+  background-size: 100%;
+  -webkit-box-shadow: 5px 5px 22px -9px rgba(0,0,0,0.2);
+  -moz-box-shadow: 5px 5px 22px -9px rgba(0,0,0,0.2);
+  box-shadow: 5px 5px 22px -9px rgba(0,0,0,0.2);
+  width: 500px;
+  height: 50vh;
+  border-radius: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.slot-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  padding: 0px 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.slot-grid div{
+  background-color: #ffffff;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 100%;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 22px -9px rgba(0,0,0,0.2);
+  -moz-box-shadow: 5px 5px 22px -9px rgba(0,0,0,0.2);
+  box-shadow: 5px 5px 22px -9px rgba(0,0,0,0.2);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.slot-action{
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.slot-action .status{
+  color: #ffffff;
+  font-size: large;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+.status h3{
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slot-action .action-button{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.slot-start{
+  width: 70px;
+  height: 70px;
+  background-color: #efb353;
+  border-radius: 100%;
+  -webkit-box-shadow: 5px 5px 22px -9px rgba(0,0,0,0.2);
+  -moz-box-shadow: 5px 5px 22px -9px rgba(0,0,0,0.2);
+  box-shadow: 5px 5px 22px -9px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.slot-start svg{
+  cursor: pointer;
+}
+
+.a1{
+	background-image: url(./image/tiles/seven.png);
+}
+.a2{
+	background-image: url(./image/tiles/cherries.png);
+}
+.a3{
+	background-image: url(./image/tiles/club.png);
+}
+.a4{
+	background-image: url(./image/tiles/diamond.png);
+}
+.a5{
+	background-image: url(./image/tiles/heart.png);
+}
+.a6{
+	background-image: url(./image/tiles/spade.png);
+}
+.a7{
+	background-image: url(./image/tiles/joker.png);
 }

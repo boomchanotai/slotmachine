@@ -1,3 +1,9 @@
+@font-face{
+  font-family: 'Casino-Filled-Regular';
+  src: local('casino.3d-lines-marquee-regular'),
+  url(./fonts/Casino/casino.flat-shadow-regular.ttf) format('truetype');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
